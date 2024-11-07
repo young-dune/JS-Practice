@@ -1,0 +1,22 @@
+<!-- React의 규칙: HTML을 이 페이지에 직접 작성하지 않는다.
+대신, JS와 React를 이용하여 element를 생성한다.
+
+React JS: 어플리케이션이 아주 interactive하도록 만들어주는 library(=엔진)
+React-dom: library또는 package, 모든 react element들을 HTML body에 둘 수 있게 해줌.
+
+-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://www.unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script>
+        const root = document.getElementById("root");
+        const span = React.createElement("span",{id:"sexy-span"}); //React로 element를 생성.
+        ReactDOM.render(span, root);//span 태그를 root인에 render한다.
+        //render의 의미: React element를 갖고, HTML로 만들어 배치한다.
+
+    </script>
+</html>
