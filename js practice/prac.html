@@ -10,14 +10,26 @@
 <body>
     <h1>현재 시간</h1>
     <h2 class="date">2024년 01월 01일 금요일</h2>
-    <div class="clock">00:00:00</div><br/>
-    <button id="find-me">내 위치 보기</button><br/>
+    <div class="clock">00:00:00</div><br />
+    <button id="find-me">내 위치 보기</button><br />
     <p id="status"></p>
-    <a id="map-link" target="_blank"></a>
+    <a id="map-link" target="_blank"></a><br /><br />
+
+    <button id="weather-check">현재 날씨는?</button>
+    <dl>
+        <dt>기온</dt>
+        <dd class="temperature"></dd>
+        <dt>위치</dt>
+        <dd class="location"></dd>
+        <dt>설명</dt>
+        <dd class="description"></dd>
+    </dl>
+
 
     <script src="clock.js"></script>
     <script src="date.js"></script>
     <script src="geo.js"></script>
+    <script src="weather.js"></script>
 </body>
 
 </html>
